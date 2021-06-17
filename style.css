@@ -1,0 +1,178 @@
+/* tmp.com stylesheet! */
+
+
+/* FONTS */
+
+@font-face {
+	font-family: SourceCodePro;
+	src: url(fonts/SourceCodePro-Medium.ttf);
+}
+
+@font-face {
+	font-family: Goldman;
+	src: url(fonts/Goldman-Regular.ttf);
+}
+
+
+/* COLOUR VARIABLES */
+
+:root {
+	--bg-colour-1: whitesmoke;
+}
+
+
+/* BODY */
+
+html {
+	background-color: #a9a9a956;
+}
+
+.body {
+	background-color: var(--bg-colour-1, whitesmoke);
+	background-image: url("images/1-raining-II.jpg");
+    background-size: cover;
+
+	font-family: SourceCodePro;
+}
+
+span {
+	white-space: nowrap;
+}
+
+
+/* NAV */
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu {
+		display: none;
+	}
+	.navbar .nav-item:hover .dropdown-menu {
+		display: block;
+	}
+	.navbar .nav-item .dropdown-menu {
+		margin-top:0;
+	}
+}
+
+.navbar {
+	background-color: var(--bg-colour-1, whitesmoke);
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.nav-link {
+	color: black;
+	font-size: 20px;
+}
+
+.nav-link:hover {
+	color: inherit;
+	filter: invert(69%) sepia(29%) saturate(0%) hue-rotate(205deg) brightness(93%) contrast(91%);
+}
+
+.nav-toggle {
+    width: 30px;
+	/* ^^ menu toggle's size for small devices */
+}
+
+.dropdown-menu {
+	border-radius: 0px !important;
+	background-color: var(--bg-colour-1, whitesmoke) !important;
+}
+
+.dropdown-item:hover {
+	background-color: #a9a9a933 !important;
+}
+
+.dropdown-item:active {
+	background-color: #dadada50 !important;
+	color: rgba(0, 0, 0, 0.658) !important;
+}
+
+.links {
+	color: black;
+	text-decoration: none;
+}
+
+.links:hover {
+	filter: invert(69%) sepia(29%) saturate(0%) hue-rotate(205deg) brightness(93%) contrast(91%);
+}
+
+#contact {
+	border: 1px solid;
+	text-align: center;
+}
+
+
+/* ICONS */
+
+.svg {
+	width: 18px;
+}
+
+.icons {
+	list-style: none;
+
+	background-color: var(--bg-colour-1, whitesmoke);
+	padding: 5px 0px 5px 15px;
+	margin-right: 50vw;
+}
+
+
+/* HOME BUTTON */
+
+.home-button {
+	height: 50px;
+}
+
+
+/* TEXT */
+
+#title {
+	background-color: var(--bg-colour-1, whitesmoke);
+	border: 1px solid;
+	border-right: none;
+	padding: 5px 20px 5px 15px;
+	margin-left: 15vw;
+	
+	font-family: Goldman;
+	font-size: 5vw;
+}
+
+/* =============
+use clamp for title sizing!! 
+================ */
+
+@media all and (max-width: 992px) {
+	#title {
+		font-size: 40px !important;
+	}
+}
+
+.about {
+	background-color: var(--bg-colour-1, whitesmoke);
+	padding: 15px 15px 1px 15px;
+	margin-left: 25vw;
+
+	font-size: 20px;
+}
+
+.page-links {
+	padding: 0px 2px 0px 2px;
+	border: 1px solid;
+}
+
+
+/* LAYOUT */
+
+.break {
+	padding: 30px;
+}
+
+.footer {
+	background-color: var(--bg-colour-1, whitesmoke);
+	padding: 20px 20px 10px 20px;
+	margin: 0px 8px 0px 8px;
+
+	font-size: 14px;
+}
