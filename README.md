@@ -1,4 +1,4 @@
-# ThinkingMindsProject.github.io
+# thinkingmindsproject.github.io
 
 TMP Website!
 
