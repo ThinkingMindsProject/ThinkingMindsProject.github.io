@@ -1,4 +1,4 @@
-/* events stylesheet! */
+/* gallery stylesheet! */
 
 
 /* FONTS */
@@ -38,7 +38,7 @@ html {
 
 .body {
 	background-color: var(--bg-colour-1, whitesmoke);
-	background-image: url("../images/2-kingdom-beyond-II.jpg");
+	background-image: url("../images/4-diptych.jpg");
     background-size: cover;
 
 	font-family: SourceCodePro;
@@ -145,14 +145,20 @@ span {
 .about {
 	background-color: var(--bg-colour-1, whitesmoke);
 	padding: 15px 15px 1px 15px;
-	margin-left: 25vw;
+	margin-left: 40px;
 
-	font-size: 20px;
+	font-size: 14px;
 }
 
 .page-links {
 	padding: 0px 2px 0px 2px;
 	border: 1px solid;
+}
+
+/* FEED */
+
+#curator-feed-default-feed-layout {
+	padding: 20px 10px 20px 10px;
 }
 
 

@@ -21,7 +21,16 @@
 }
 
 
-/* BODY */
+/* GLOBAL */
+
+:focus {
+	outline: none;
+	box-shadow: 0 0 15px black;
+}
+
+::selection {
+	background: #a9a9a9;
+}
 
 html {
 	background-color: #a9a9a956;
@@ -41,18 +50,6 @@ span {
 
 
 /* NAV */
-
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu {
-		display: none;
-	}
-	.navbar .nav-item:hover .dropdown-menu {
-		display: block;
-	}
-	.navbar .nav-item .dropdown-menu {
-		margin-top:0;
-	}
-}
 
 .navbar {
 	background-color: var(--bg-colour-1, whitesmoke);
@@ -118,6 +115,10 @@ span {
 	margin-right: 50vw;
 }
 
+.icons li a {
+	padding: 0px 2px 3px 2px;
+}
+
 
 /* HOME BUTTON */
 
@@ -136,17 +137,7 @@ span {
 	margin-left: 15vw;
 	
 	font-family: Goldman;
-	font-size: 5vw;
-}
-
-/* =============
-use clamp for title sizing!! 
-================ */
-
-@media all and (max-width: 992px) {
-	#title {
-		font-size: 40px !important;
-	}
+	font-size: clamp(40px, 5vw, 100px);
 }
 
 .about {
@@ -176,3 +167,26 @@ use clamp for title sizing!!
 
 	font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+/* NAV HOVER STUFF */
+
+
+/* @media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu {
+		display: none;
+	}
+	.navbar .nav-item:hover .dropdown-menu {
+		display: block;
+	}
+	.navbar .nav-item .dropdown-menu {
+		margin-top:0;
+	}
+} */
